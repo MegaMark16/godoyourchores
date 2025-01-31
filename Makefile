@@ -11,11 +11,11 @@ all: clean build
 
 # Build application
 build:
-	go build ${LDFLAGS} -o ${BINARY_NAME}
+	go build ${LDFLAGS} -o ./bin/${BINARY_NAME} ./cmd/server
 
 # Run application
 run: build
-	./${BINARY_NAME}
+	./bin/${BINARY_NAME}
 
 # Run tests
 test:
@@ -23,4 +23,4 @@ test:
 
 # Clean build artifacts
 clean:
-	rm -f ${BINARY_NAME}
+	rm -f ./bin/${BINARY_NAME}
