@@ -20,7 +20,7 @@ func InitializeSessionStore() {
 func initSession(r *http.Request) *sessions.Session {
 	session, _ := store.Get(r, "session")
 	if session.IsNew {
-		session.Options.Domain = "localhost"
+		//session.Options.Domain = "localhost"
 		session.Options.MaxAge = 10
 		session.Options.HttpOnly = true
 		session.Options.Secure = false
