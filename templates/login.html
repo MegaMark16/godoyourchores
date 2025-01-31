@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <h3>Login</h3>
+    <form method="post">
+      <div>
+        <label for="username_id">Username: </label>
+        <input type="text" name="username" id="username_id"/>
+      </div>
+      <div>
+        <label for="password_id">Password: </label>
+        <input type="password" name="password" id="password_id"/>
+      </div>
+      <div>{{ .Message }}</div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
